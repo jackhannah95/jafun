@@ -7,4 +7,6 @@
 #'
 #' @docType package
 #' @name jafun
+#' @importFrom magrittr %>%
+#' @importFrom rlang .data
 NULL
