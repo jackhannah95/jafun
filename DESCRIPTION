@@ -6,12 +6,19 @@ Authors@R: c(
     )
 Description: R package containing Jack Hannah's personal functions.
 License: MIT + file LICENSE
+URL: https://github.com/jackhannah95/jafun
+BugReports: https://github.com/jackhannah95/jafun/issues
+Imports:
+    dplyr,
+    magrittr,
+    rlang,
+    tibble
+Suggests: 
+    lubridate,
+    purrr,
+    testthat
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
-Suggests: 
-    lubridate,
-    magrittr,
-    purrr,
-    testthat
+
