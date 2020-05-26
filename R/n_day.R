@@ -1,4 +1,5 @@
-#' @title Calculate number of occurrences of a day in a set time period
+#' @title Calculate number of occurrences of a day of the week in a set time 
+#' period
 #' 
 #' @description \code{n_day} takes a start date, an end date and a day of the 
 #' week. It calculates the number of times said day of the week occurs within 

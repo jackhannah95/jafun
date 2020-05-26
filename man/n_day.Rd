@@ -2,7 +2,8 @@
 % Please edit documentation in R/n_day.R
 \name{n_day}
 \alias{n_day}
-\title{Calculate number of occurrences of a day in a set time period}
+\title{Calculate number of occurrences of a day of the week in a set time
+period}
 \usage{
 n_day(start, end, day)
 }
