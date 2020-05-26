@@ -11,12 +11,12 @@ n_day(start, end, day)
 \item{start}{The beginning of the time period. Must be a date of \code{Date}
 or \code{POSIXt} class.}
 
-\item{end}{The end of the time period.M ust be a date of \code{Date} or
+\item{end}{The end of the time period. Must be a date of \code{Date} or
 \code{POSIXt} class.}
 
-\item{day}{The day of the week, entered as a \code{numeric} between 0 (Sunday)
-and 6 (Saturday). It won't accept literal string entries of the day of the
-week.}
+\item{day}{The day of the week, entered as a \code{numeric} between 0
+(Sunday) and 6 (Saturday). It won't accept literal string entries of the day
+of the week.}
 }
 \description{
 \code{n_day} takes a start date, an end date and a day of the

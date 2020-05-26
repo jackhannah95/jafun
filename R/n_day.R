@@ -7,11 +7,11 @@
 #' 
 #' @param start The beginning of the time period. Must be a date of \code{Date} 
 #' or \code{POSIXt} class.
-#' @param end The end of the time period.M ust be a date of \code{Date} or 
+#' @param end The end of the time period. Must be a date of \code{Date} or 
 #' \code{POSIXt} class.
-#' @param day The day of the week, entered as a \code{numeric} between 0 (Sunday) 
-#' and 6 (Saturday). It won't accept literal string entries of the day of the 
-#' week.
+#' @param day The day of the week, entered as a \code{numeric} between 0 
+#' (Sunday) and 6 (Saturday). It won't accept literal string entries of the day 
+#' of the week.
 #' 
 #' @examples
 #' 
