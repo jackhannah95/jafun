@@ -12,5 +12,27 @@ days_of_week(abbr = FALSE)
 The default value is FALSE.}
 }
 \description{
-The days of the week
+\code{days_of_week} returns a vector of the days of the week in
+full (e.g. "Friday") or abbreviated (e.g. "Fri") form. It exists because I'm
+lazy and don't like typing them all out.
+}
+\details{
+The \code{Date} and \code{POSIXt} classes within R treat Sunday as
+day 0 in a week, and Saturday as day 6. As a vector cannot have an element
+at position zero, \code{days_of_week} returns Sunday as its seventh element.
+The positions of the rest of the days within \code{days_of_week} are
+consistent with the order of the days of the week within the \code{Date} and
+\code{POSIXt} classes.
+}
+\examples{
+days_of_week()
+days_of_week(abbr = TRUE)[3]
+
+}
+\seealso{
+\code{\link{day_to_num}} for converting the output of \code{days_of_week}
+into numeric values.
+
+\code{\link{n_day}} for calculating the number of occurrences of a day of
+the week in a set time period.
 }
