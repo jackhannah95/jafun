@@ -5,7 +5,7 @@
 \alias{jafun}
 \title{\code{jafun} package}
 \description{
-Personal R package of Jack Hannah.
+Jack Hannah's personal R package.
 }
 \details{
 See the README on

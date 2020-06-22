@@ -1,6 +1,6 @@
 #' \code{jafun} package
 #'
-#' Personal R package of Jack Hannah.
+#' Jack Hannah's personal R package.
 #'
 #' See the README on
 #' \href{https://github.com/jackhannah95/jafun#readme}{GitHub}.
