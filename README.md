@@ -1,6 +1,7 @@
 # Jack Hannah's Personal R Package
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/jackhannah95/jafun.svg?branch=master)](https://travis-ci.com/jackhannah95/jafun)
 [![Codecov test coverage](https://codecov.io/gh/jackhannah95/jafun/branch/master/graph/badge.svg)](https://codecov.io/gh/jackhannah95/jafun?branch=master)
 <!-- badges: end -->
 
