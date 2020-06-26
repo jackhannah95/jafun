@@ -7,6 +7,12 @@ r:
   - oldrel
   - release
   - devel
+  
+os:
+  - linux
+  
+dist:
+  - xenial
 
 r_github_packages:
   - r-lib/covr
