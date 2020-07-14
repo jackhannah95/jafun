@@ -4,11 +4,17 @@
 \alias{day_to_num}
 \title{Convert the days of the week to numeric}
 \usage{
-day_to_num(x)
+day_to_num(x, ignore_case = TRUE)
 }
 \arguments{
 \item{x}{A character string containing days of the week in full (e.g.
 "Friday") or abbreviated (e.g. "Fri") form.}
+
+\item{ignore_case}{Logical. If TRUE, the case of \code{x} is ignored. If
+FALSE, the case of \code{x} is preserved. If FALSE, days must be provided in
+full (e.g. "Friday") or three-character abbreviated (e.g. "Fri") form with
+only the first letter capitalised to be recognised as valid days of the week.
+Defaults to TRUE.}
 }
 \description{
 \code{day_to_num} converts the days of the week from

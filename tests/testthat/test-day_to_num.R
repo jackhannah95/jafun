@@ -6,6 +6,14 @@ test_that("Produces correct output", {
   expect_equal(day_to_num(days_of_week()), c(1:6, 0))
 })
 
+test_that("Correctly ignores case when specified", {
+  expect_equal(day_to_num("monday"), 1)
+  expect_equal(day_to_num(c("TUESDAY", "wED", "tHuRsDaY", "fri", "sAt")), 2:6)
+  expect_equal(day_to_num(c(tolower(days_of_week(abbr = TRUE)),
+                            toupper(days_of_week()))),
+               rep(c(1:6, 0), 2))
+})
+
 test_that("Produces warning message if supplied with invalid day", {
   expect_warning(day_to_num("Tuesdayy"),
                  paste("Entries which do not correspond to a day of the week", 
@@ -13,13 +21,15 @@ test_that("Produces warning message if supplied with invalid day", {
 })
 
 test_that("Returns NA if supplied with invalid day", {
-  expect_true(is.na(suppressWarnings(day_to_num("monday"))))
+  expect_true(is.na(suppressWarnings(day_to_num("monday", 
+                                                ignore_case = FALSE))))
   expect_equal(suppressWarnings(day_to_num(c("Monday", 
                                              "tuesday",
                                              "Wed",
                                              "thu",
                                              "Frid",
                                              "satu",
-                                             "Sun"))),
+                                             "Sun"),
+                                           ignore_case = FALSE)),
                c(1, NA, 3, NA, NA, NA, 0))
 })

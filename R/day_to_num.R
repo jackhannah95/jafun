@@ -9,6 +9,11 @@
 #' 
 #' @param x A character string containing days of the week in full (e.g. 
 #' "Friday") or abbreviated (e.g. "Fri") form.
+#' @param ignore_case Logical. If TRUE, the case of \code{x} is ignored. If 
+#' FALSE, the case of \code{x} is preserved. If FALSE, days must be provided in 
+#' full (e.g. "Friday") or three-character abbreviated (e.g. "Fri") form with 
+#' only the first letter capitalised to be recognised as valid days of the week. 
+#' Defaults to TRUE.
 #' 
 #' @examples
 #' day_to_num(c("Monday", "Tuesday", "Wed"))
@@ -24,7 +29,11 @@
 #' the week in a set time period.
 #' 
 #' @export
-day_to_num <- function(x) {
+day_to_num <- function(x, ignore_case = TRUE) {
+  
+  if (isTRUE(ignore_case)) {
+    x <- gsub(" ", "", janitor::make_clean_names(x, "sentence"))
+  }
   
   if(any(!x %in% c(jafun::days_of_week(), jafun::days_of_week(abbr = TRUE)))) {
     warning(paste("Entries which do not correspond to a day of the week will", 
