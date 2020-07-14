@@ -29,7 +29,7 @@
 day_to_num <- function(x, ignore_case = TRUE) {
   
   if (isTRUE(ignore_case)) {
-    x <- janitor::make_clean_names(x, case = "Title")
+    x <- gsub(" ", "", janitor::make_clean_names(x, "sentence"))
   }
   
   if(any(!x %in% c(jafun::days_of_week(), jafun::days_of_week(abbr = TRUE)))) {
