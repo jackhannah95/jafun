@@ -24,7 +24,11 @@
 #' the week in a set time period.
 #' 
 #' @export
-day_to_num <- function(x) {
+day_to_num <- function(x, ignore_case = TRUE) {
+  
+  if (isTRUE(ignore_case)) {
+    x <- janitor::make_clean_names(x, case = "Title")
+  }
   
   if(any(!x %in% c(jafun::days_of_week(), jafun::days_of_week(abbr = TRUE)))) {
     warning(paste("Entries which do not correspond to a day of the week will", 
