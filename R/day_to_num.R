@@ -9,6 +9,8 @@
 #' 
 #' @param x A character string containing days of the week in full (e.g. 
 #' "Friday") or abbreviated (e.g. "Fri") form.
+#' @param ignore_case Logical. If TRUE, the case of \code{x} is ignored. If 
+#' FALSE, the case of \code{x} is preserved. Defaults to TRUE.
 #' 
 #' @examples
 #' day_to_num(c("Monday", "Tuesday", "Wed"))
