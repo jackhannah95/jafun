@@ -15,7 +15,6 @@ Imports:
     rlang,
     tibble
 Suggests:
-    covr,
     lubridate,
     purrr,
     testthat
