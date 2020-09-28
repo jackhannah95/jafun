@@ -13,7 +13,8 @@ Imports:
     janitor,
     magrittr,
     rlang,
-    tibble
+    tibble,
+    utils
 Suggests:
     lubridate,
     purrr,

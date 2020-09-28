@@ -32,12 +32,14 @@
 day_to_num <- function(x, ignore_case = TRUE) {
   
   if (isTRUE(ignore_case)) {
-    x <- gsub(" ", "", janitor::make_clean_names(x, "sentence"))
+    x %<>%
+      janitor::make_clean_names("sentence") %>%
+      gsub(" ", "", .)
   }
   
   if(any(!x %in% c(jafun::days_of_week(), jafun::days_of_week(abbr = TRUE)))) {
-    warning(paste("Entries which do not correspond to a day of the week will", 
-                  "return an NA"))
+    warning("Entries which do not correspond to a day of the week will return ", 
+            "an NA")
   }
   
   x <- ifelse(x %in% c(jafun::days_of_week(), jafun::days_of_week(abbr = TRUE)),
