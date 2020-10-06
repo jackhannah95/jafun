@@ -2,6 +2,7 @@
 
 export(day_to_num)
 export(days_of_week)
+export(del_dir)
 export(n_day)
 export(nrow_path)
 export(prop_missing)

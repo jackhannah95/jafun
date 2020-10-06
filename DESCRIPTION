@@ -10,6 +10,8 @@ URL: https://github.com/jackhannah95/jafun
 BugReports: https://github.com/jackhannah95/jafun/issues
 Imports:
     dplyr,
+    fs,
+    fuzzyjoin,
     janitor,
     magrittr,
     naniar,
