@@ -18,7 +18,6 @@ Imports:
     purrr,
     R.utils,
     rlang,
-    scales,
     tibble,
     tidyr,
     utils
