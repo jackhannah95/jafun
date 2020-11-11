@@ -2,13 +2,26 @@
 % Please edit documentation in R/prop_missing.R
 \name{prop_missing}
 \alias{prop_missing}
-\title{Calculate the proportion of missing values in each column}
+\title{Calculate the proportion of missing values in each column of a data
+frame}
 \usage{
 prop_missing(df)
 }
 \arguments{
-\item{df}{The dataframe.}
+\item{df}{A \code{data.frame} or an extension of \code{data.frame} such as
+a \code{\link[tibble]{tibble}}.}
+}
+\value{
+A \code{\link[tibble]{tibble}} with two columns: one (named
+\code{variable}) containing the column names of the input \code{data.frame}, and
+the other (named \code{prop_missing}) containing the proportion of missing values
+within the corresponding column in the input \code{data.frame}.
 }
 \description{
-Calculate the proportion of missing values in each column
+\code{prop_missing} takes a \code{data.frame} and calculates the
+proportion of NA values within each column.
+}
+\examples{
+prop_missing(airquality)
+
 }
