@@ -1,3 +1,7 @@
+# jafun 0.2.0 (2020-11-11)
+
+- New functions added: `prop_missing()` and `source_scripts()`.
+
 # jafun 0.1.1 (2020-07-14)
 
 - `day_to_num()` now has an `ignore_case` argument which defaults to `TRUE`.
