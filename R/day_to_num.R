@@ -37,7 +37,7 @@ day_to_num <- function(x, ignore_case = TRUE) {
       gsub(" ", "", .)
   }
   
-  if(any(!x %in% c(jafun::days_of_week(), jafun::days_of_week(abbr = TRUE)))) {
+  if (any(!x %in% c(jafun::days_of_week(), jafun::days_of_week(abbr = TRUE)))) {
     warning("Entries which do not correspond to a day of the week will return ", 
             "an NA")
   }
