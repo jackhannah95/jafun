@@ -13,5 +13,5 @@ test_that("Errors when supplied with an invalid filepath", {
 })
 
 test_that("Errors when supplied with a filepath containing no R scripts", {
-  expect_error(source_scripts("man"))
+  expect_error(source_scripts(test_path("files")))
 })
