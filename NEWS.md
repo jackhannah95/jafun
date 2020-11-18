@@ -1,3 +1,7 @@
+# jafun 0.2.1 (2020-11-18)
+
+- Fixed a test for `source_scripts()` that passed but for the wrong reason.
+
 # jafun 0.2.0 (2020-11-11)
 
 - New functions added: `prop_missing()` and `source_scripts()`.
