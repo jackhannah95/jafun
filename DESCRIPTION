@@ -1,10 +1,10 @@
 Package: jafun
 Title: Jack Hannah's Personal R Package
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: c(
-    person("Jack", "Hannah", email = "jack.hannah@glasgow.ac.uk", role = c("aut", "cre"))
+    person("Jack", "Hannah", email = "jack.hannah2@phs.scot", role = c("aut", "cre"))
     )
-Description: R package containing Jack Hannah's personal functions.
+Description: R package containing Jack Hannah's miscellaneous functions.
 License: MIT + file LICENSE
 URL: https://github.com/jackhannah95/jafun
 BugReports: https://github.com/jackhannah95/jafun/issues
