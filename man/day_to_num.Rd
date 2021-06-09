@@ -34,7 +34,7 @@ day_to_num(weekdays(lubridate::dmy(01012020)))
 \seealso{
 \code{\link{days_of_week}} for returning a vector of the days of the week.
 
-\code{\link[base]{weekdays}} for converting a date into the day of the week.
+\code{\link{weekdays}} for converting a date into the day of the week.
 
 \code{\link{n_day}} for calculating the number of occurrences of a day of
 the week in a set time period.
