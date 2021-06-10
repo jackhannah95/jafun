@@ -1,3 +1,7 @@
+# jafun 0.2.2 (2021-06-11)
+
+- Rewrote `days_of_week()` and fixed a bug in its implementation which allowed non-logical values to be supplied to its `abbr` argument ([#3](https://github.com/jackhannah95/jafun/issues/3)).
+
 # jafun 0.2.1 (2020-11-18)
 
 - Fixed a test for `source_scripts()` that passed but for the wrong reason.
