@@ -28,14 +28,6 @@
 #' 
 #' @export
 days_of_week <- function(abbr = FALSE) {
-  
-  days <- weekdays(as.Date(seq(7), origin = "1950-01-01"))
-  
-  if (isFALSE(abbr)) {
-    return(days)
-    
-  } else {
-    
-    return(substr(days, 1, 3))
-  }
+  dates <- as.Date(1:7, origin = "1950-01-01")
+  weekdays(dates, abbreviate = abbr)
 }
