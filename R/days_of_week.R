@@ -28,6 +28,11 @@
 #' 
 #' @export
 days_of_week <- function(abbr = FALSE) {
+  
+  if(!is.logical(abbr)) {
+    stop("`abbr` must be TRUE or FALSE")
+  }
+  
   dates <- as.Date(1:7, origin = "1950-01-01")
   weekdays(dates, abbreviate = abbr)
 }
