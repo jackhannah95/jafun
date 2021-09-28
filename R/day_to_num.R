@@ -33,7 +33,7 @@ day_to_num <- function(x, ignore_case = TRUE) {
   
   if (isTRUE(ignore_case)) {
     x %<>%
-      janitor::make_clean_names("sentence") %>%
+      stringr::str_to_title() %>%
       gsub(" ", "", .)
   }
   
