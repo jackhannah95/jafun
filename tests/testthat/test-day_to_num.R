@@ -33,3 +33,12 @@ test_that("Returns NA if supplied with invalid day", {
                                            ignore_case = FALSE)),
                c(1, NA, 3, NA, NA, NA, 0))
 })
+
+test_that("Allows repeated entries of the same day of the week", {
+  expect_equal(suppressWarnings(day_to_num(c("Monday",
+                                             "Mon",
+                                             "monday",
+                                             "mon",
+                                             "mOnD"))),
+               c(rep(1, 4), NA))
+})
