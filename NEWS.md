@@ -1,7 +1,7 @@
 # jafun 0.2.3 (2021-10-04)
 
 - Fixed a bug in `day_to_num()` which prevented it from working correctly when supplied with a vector containing multiple instances of the same day of the week.
-- `jafun` no longer imports [`janitor`](http://sfirke.github.io/janitor/), but does now import [stringr](https://stringr.tidyverse.org/).
+- `jafun` no longer imports [`janitor`](http://sfirke.github.io/janitor/), but does now import [`stringr`](https://stringr.tidyverse.org/).
 
 # jafun 0.2.2 (2021-06-11)
 
