@@ -1,6 +1,6 @@
 Package: jafun
 Title: Jack Hannah's Personal R Package
-Version: 0.2.2
+Version: 0.2.3
 Authors@R: c(
     person("Jack", "Hannah", email = "jack.hannah2@phs.scot", role = c("aut", "cre"))
     )
@@ -10,11 +10,11 @@ URL: https://github.com/jackhannah95/jafun
 BugReports: https://github.com/jackhannah95/jafun/issues
 Imports:
     dplyr,
-    janitor,
     magrittr,
     naniar,
     purrr,
     rlang,
+    stringr,
     tibble,
     tidyr,
     utils
