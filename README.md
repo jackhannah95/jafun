@@ -7,4 +7,8 @@ date)](https://img.shields.io/github/v/release/jackhannah95/jafun)](https://gith
 [![Codecov test coverage](https://codecov.io/gh/jackhannah95/jafun/branch/master/graph/badge.svg)](https://codecov.io/gh/jackhannah95/jafun)
 <!-- badges: end -->
 
-A place to keep my miscellaneous R functions.
+A place to keep my miscellaneous R functions. Install the package with:
+
+```r
+remotes::install_github("jackhannah95/jafun")
+```
