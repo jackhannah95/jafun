@@ -1,3 +1,7 @@
+# jafun 0.2.4 (2021-10-14)
+
+- Replaced the [`R-CMD-check.yaml`](https://github.com/jackhannah95/jafun/blob/master/.github/workflows/R-CMD-check.yaml) file with the standard template provided by `usethis::use_github_action_check_standard()`.
+
 # jafun 0.2.3 (2021-10-04)
 
 - Fixed a bug in `day_to_num()` which prevented it from working correctly when supplied with a vector containing multiple instances of the same day of the week.
