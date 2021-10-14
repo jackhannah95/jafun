@@ -1,6 +1,6 @@
 Package: jafun
 Title: Jack Hannah's Personal R Package
-Version: 0.2.3
+Version: 0.2.4
 Authors@R: c(
     person("Jack", "Hannah", email = "jack.hannah2@phs.scot", role = c("aut", "cre"))
     )
