@@ -24,6 +24,6 @@ test_that("Strips data frame of all SPSS-related information", {
 })
 
 test_that("Errors if not supplied with data frame", {
-  expect_error(zap_everything(starwars_spss$hair_color,
-                              "The input must be a data frame"))
+  expect_error(zap_everything(starwars_spss$hair_color),
+               "The input must be a data frame")
 })

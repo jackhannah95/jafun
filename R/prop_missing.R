@@ -18,7 +18,7 @@
 #' @export
 prop_missing <- function(df) {
   
-  if (!inherits(df, "data.frame")) {
+  if(!inherits(df, "data.frame")) {
     stop("The input must be a data frame")
   }
   

@@ -29,7 +29,7 @@
 #' @export
 zap_everything <- function(df) {
   
-  if (!inherits(df, "data.frame")) {
+  if(!inherits(df, "data.frame")) {
     stop("The input must be a data frame")
   }
   
