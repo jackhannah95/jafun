@@ -40,11 +40,8 @@ zap_everything <- function(df) {
     haven::zap_widths() %>%
     dplyr::mutate(
       dplyr::across(
-        tidyselect::vars_select_helpers$where(
-          is.character,
-          haven::zap_empty
-        )
+        tidyselect::vars_select_helpers$where(is.character),
+        haven::zap_empty
       )
     )
 }
-
