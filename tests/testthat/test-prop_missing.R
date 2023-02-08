@@ -25,5 +25,6 @@ test_that("Returns proportions in descending order", {
 })
 
 test_that("Errors if not supplied with data frame", {
-  expect_error(prop_missing(c(1, NA, 4, NA, NA, 10)))
+  expect_error(prop_missing(c(1, NA, 4, NA, NA, 10)),
+               "The input must be a data frame")
 })
